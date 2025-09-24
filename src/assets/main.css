@@ -1,0 +1,19 @@
+@import './base.css';
+
+a {
+  text-decoration: none;
+  color: blue;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 1281px) {
+  #app {
+    max-width: 100vw;
+  }
+}
