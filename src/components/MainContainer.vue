@@ -181,7 +181,7 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  background-image: url('@/assets/bg-image.png');
+  background-image: url('@/assets/bell.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
