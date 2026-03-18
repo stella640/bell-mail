@@ -9,7 +9,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',  // New route for modal form page
-      name: 'home',
+      name: 'loader',
       component: LoaderView,  // This page will render the ModalForm
     },
     {
