@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LoaderView from '../views/LoaderView.vue'
-import HomeView from '../views/HomeView.vue'
+// import HomeView from '../views/HomeView.vue'
 import ModalFormPage from '../views/ModalFormPage.vue'  // Import the page where ModalForm will be displayed
 import FrenchModalFormPage from '../views/FrenchModalFormPage.vue'
 
