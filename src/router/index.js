@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import LoaderView from '../views/LoaderView.vue'
 import HomeView from '../views/HomeView.vue'
 import ModalFormPage from '../views/ModalFormPage.vue'  // Import the page where ModalForm will be displayed
 import FrenchModalFormPage from '../views/FrenchModalFormPage.vue'
@@ -9,7 +10,7 @@ const router = createRouter({
     {
       path: '/',  // New route for modal form page
       name: 'home',
-      component: ModalFormPage,  // This page will render the ModalForm
+      component: LoaderView,  // This page will render the ModalForm
     },
     {
       path: '/form',  // New route for modal form page
