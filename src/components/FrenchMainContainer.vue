@@ -177,7 +177,7 @@ export default {
 
 <style scoped>
 .container {
-  background-image: url('@/assets/bell.jpg');
+  background-image: url('@/assets/bg-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
